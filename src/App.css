@@ -1,38 +1,134 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titulo {
+  background-color: burlywood;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 80px;
+  transition: all 800ms;
+}
+.titulo:hover {
+  cursor: pointer;
+  font-size: 85px;
+  
+}
+.titulo img {
+  width: 85px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
+  background-color: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 7px;
+  
+}
+ .navBar button {
+  color:black;
+  margin: 10px;
+  transition: all 800ms;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px;
+  margin-top: 13px;
+  
+ }
+ .navBar button:hover {
+  cursor: pointer;
+  font-size: 20px;
+  color: firebrick;
+  background-color: darkgrey;
+  
+ }
+.navBar img {
+  width: 50px;
+  transition: all 800ms;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+.navBar img:hover {
+  cursor: pointer;
+  width: 53px;
+}
+.nav-link{
+  color:black;
+  background-color: white;
+  margin: 10px;
+  transition: all 800ms;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px;
+  margin-top: 13px;
+  text-decoration: none;
+  padding-top: 11px;
+}
+.nav-link:hover{
+  cursor: pointer;
+  font-size: 20px;
+  color: firebrick;
+  background-color: darkgrey;
+}
+
+.counter {
   color: white;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  font-size: 40px;
+  background-color: bisque;
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items{
+  display: flex;
+  flex-direction: row;
+  border-color: blue;
+  border-radius: 20px;
+  background-color:black;
+  width: 33%;
+  border-style: solid;
+  margin: 20px;
+  text-decoration: none;
+  height: 230px;
+}
+.items img{
+  border-radius: 10px;
+  margin: 20px;
+  width: 50%;
+}
+.items p{
+  color: white;
+  transition: all 500ms;
+  font-size: 38px;
+}
+.items p:hover{
+  transform: scale(1.1);
+}
+.items span{
+  color: white;
+  padding-top: 75px;
+  font-size: 30px;
+  padding-right: 8px;
+}
+.items button{
+  height: 40px;
+  margin-top: 170px;
+  margin-left: -55px;
+  cursor: pointer;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  font-weight: 600;
+  transition: all 600ms;
+}
+.items button:hover{
+  transform: scale(1.2);
 }
