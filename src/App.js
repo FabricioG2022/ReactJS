@@ -13,9 +13,10 @@ function App() {
       <h1 className="titulo">GAMING ARGENTINA <img src={imagen2} alt="" /></h1>
       <Navbar/>
         <Switch>
+          <Route path='/item/:detalleId'> <ItemDetailContainer/></Route>
           <Route path='/' ><ItemListContainer/></Route>
           <Route path='/category/:id'> <ItemListContainer/></Route>
-          <Route path='/item/:id'> <ItemDetailContainer/></Route>
+          
         </Switch>
 
       </BrowserRouter>
